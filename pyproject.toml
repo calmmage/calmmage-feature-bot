@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "project-name"
+name = "calmmage-feature-bot"
 version = "0.0.1"
 # Template Version: 0.0.2 # update dockerfile and add basic contents
 # Add scheduled job example
@@ -11,7 +11,7 @@ readme = "README.md"
 python = ">=3.10,<4.0" # ugly because of langchain
 # for stability, use frozen-app-name branch
 #calmlib = { git = "https://github.com/calmmage/calmlib.git", branch = "main" }
-bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" }
+bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" } # 0.3.6
 #calmmage = { git = "https://github.com/calmmage/calmmage.git", branch = "main" }
 pytest = "*"
 # logging

@@ -1,8 +1,8 @@
 import asyncio
 from dotenv import load_dotenv
 
-load_dotenv()
-from project_name.bot import bot, dp
+load_dotenv(".env")
+from calmmage_feature_bot.bot import bot, dp
 
 
 if __name__ == "__main__":
