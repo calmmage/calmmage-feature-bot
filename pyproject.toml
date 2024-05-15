@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "calmmage-feature-bot"
-version = "0.0.1"
+version = "0.0.2" # Move telegram messaging utils to core Handler class
 # Template Version: 0.0.2 # update dockerfile and add basic contents
 # Add scheduled job example
 description = ""
