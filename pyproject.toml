@@ -1,18 +1,16 @@
 [tool.poetry]
 name = "calmmage-feature-bot"
-version = "0.0.2" # Move telegram messaging utils to core Handler class
-# Template Version: 0.0.2 # update dockerfile and add basic contents
-# Add scheduled job example
+version = "0.0.3" # split lib into app and handler, update to new bot-lib with calmapp extracted
 description = ""
-authors = ["Petr Lavrov <calmmage@gmail.com>"]
+authors = ["Petr Lavrov <petrlavrov@calmmage.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0" # ugly because of langchain
 # for stability, use frozen-app-name branch
 #calmlib = { git = "https://github.com/calmmage/calmlib.git", branch = "main" }
-bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" } # 0.3.6
-#calmmage = { git = "https://github.com/calmmage/calmmage.git", branch = "main" }
+bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" }
+calmapp = { git = "https://github.com/calmmage/calmapp.git", branch = "main" }
 pytest = "*"
 # logging
 loguru = "*"
@@ -29,3 +27,9 @@ pre-commit = "*"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[template]
+version = "0.0.2 "  # split lib into app and handler, update to new bot-lib with calmapp extracted
+url = "https://github.com/calmmage/bot-lib-bot-template.git"
+author = "Petr Lavrov <petrlavrov@calmmage.com>"
+description = "update dockerfile and add basic contents"
